@@ -1,0 +1,64 @@
+@import "./styles/preflight.css";
+@import "~@semi-bot/semi-theme-cgchatai/semi.min.css";
+@import "./styles/markdown.scss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --safe-area-inset-bottom: min(32px, env(safe-area-inset-bottom));
+  --linear-sider: linear-gradient(180deg, #eceff8, #d1d8f0);
+  --linear-text: linear-gradient(90deg, #00a3f5, #5959ff 49.48%, #7626ff);
+  --linear-blue-card: linear-gradient(180deg, #dde2fb 0.53%, #edf0ff);
+}
+
+@font-face {
+  font-family: Barlow;
+  src: --font-barlow
+}
+
+body {
+  --semi-grey-0: 248, 248, 248;
+}
+
+.semi-input-wrapper {
+  overflow: hidden;
+}
+
+[class*="semi-"] {
+  font-family: inherit;
+}
+
+.semi-switch-checked {
+  background-color: var(--semi-color-primary) !important;
+}
+
+.semi-card {
+  @apply bg-white
+}
+
+.semi-image img {
+  @apply w-full h-full;
+}
+
+.semi-input-textarea-wrapper-large .semi-input-textarea {
+  @apply text-base
+}
+
+.semi-tabs-pane {
+  overflow: visible;
+}
+
+
+// 极验验证暗黑主题
+.geetest_footer,
+.geetest_header,
+.geetest_container,
+.geetest_bind_box,
+.geetest_box_layer .geetest_box_btn {
+  background-color: var(--semi-color-bg-2) !important;
+}
+
+.geetest_header .geetest_text_tips {
+  color: var(--semi-color-text-1);
+}
