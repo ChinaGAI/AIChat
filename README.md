@@ -13,8 +13,8 @@
 ### 运行
 
 ```sh
-git clone https://github.com/ChinaGAI/AICHAT
-cd ai-chat
+git clone https://github.com/ChinaGAI/AIChat
+cd AIChat
 npm install
 npm run dev
 ```
